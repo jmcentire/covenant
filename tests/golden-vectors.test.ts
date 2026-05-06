@@ -48,7 +48,7 @@ type VectorFile = {
   cases: VectorCase[];
 };
 
-const vectorsPath = resolve(import.meta.dirname, '..', '..', 'vectors', 'policy-cases.json');
+const vectorsPath = resolve(import.meta.dirname, '..', 'vectors', 'policy-cases.json');
 const vectors = JSON.parse(readFileSync(vectorsPath, 'utf8')) as VectorFile;
 
 // Convert a JSON Schema to a Zod schema. We support the narrow subset

@@ -8,7 +8,7 @@
 // covenant ships an in-memory default ViolationStore for tests; if
 // the consumer never sets one, validate() throws on first violation.
 
-import type { CovenantLogger, ViolationStore } from './types.ts';
+import type { CovenantLogger, ViolationStore } from './types.js';
 
 let store: ViolationStore | undefined;
 let logger: CovenantLogger | undefined;

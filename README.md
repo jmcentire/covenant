@@ -53,23 +53,23 @@ covenant/
   contracts/                       # canonical JSON Schema + policy YAML
     reeve.baton.event.shape.json   # emitted by covenant-export
     reeve.baton.event.shape.policy.yaml
-  ts/                              # @stack/covenant
-    package.json
-    tsconfig.json
-    src/
-      types.ts
-      errors.ts
-      registry.ts
-      store.ts                     # ViolationStore + InMemoryViolationStore
-      validate.ts
-      contracts/
-        reeve-baton-event.contract.ts
-      index.ts
-    bin/
-      covenant-export.ts           # CLI: emit/check JSON Schema artifacts
-    tests/
-      covenant.test.ts             # ported from Reeve
-      golden-vectors.test.ts       # consumes vectors/policy-cases.json
+  package.json                     # @stack/covenant (TS package, root-level)
+  tsconfig.json
+  tsconfig.build.json              # used by `prepare` to emit dist/
+  src/
+    types.ts
+    errors.ts
+    registry.ts
+    store.ts                       # ViolationStore + InMemoryViolationStore
+    validate.ts
+    contracts/
+      reeve-baton-event.contract.ts
+    index.ts
+  bin/
+    covenant-export.ts             # CLI: emit/check JSON Schema artifacts
+  tests/
+    covenant.test.ts               # ported from Reeve
+    golden-vectors.test.ts         # consumes vectors/policy-cases.json
   py/                              # covenant (Python)
     src/covenant/
       __init__.py
@@ -84,16 +84,21 @@ covenant/
   vectors/
     policy-cases.json              # cross-language golden tests
   pyproject.toml                   # py package, root-level
-  package.json                     # ts workspace root
-  .github/workflows/check.yml
 ```
 
 ## TypeScript usage
 
-Install the (eventual) package:
+Install from the GitHub repo. The package's `prepare` script runs
+`tsc → dist/` at install time, so you get a fully built package
+with `.d.ts` files.
 
-```bash
-npm install @stack/covenant zod
+```json
+{
+  "dependencies": {
+    "@stack/covenant": "git+https://github.com/jmcentire/covenant.git#v0.1.1",
+    "zod": "^3.23.0"
+  }
+}
 ```
 
 Wire a store and register your contracts:
@@ -147,7 +152,7 @@ contract id, store-not-configured) DO throw — those aren't violations.
 
 ### Authoring a contract for export
 
-Drop a `*.contract.ts` file under `ts/src/contracts/` that exports a
+Drop a `*.contract.ts` file under `src/contracts/` that exports a
 `contract: Contract` const:
 
 ```typescript

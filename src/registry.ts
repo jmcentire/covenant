@@ -1,7 +1,7 @@
 // Covenant registry. Process-local; lookups by contract id.
 
-import { ContractAlreadyRegisteredError } from './errors.ts';
-import type { Contract } from './types.ts';
+import { ContractAlreadyRegisteredError } from './errors.js';
+import type { Contract } from './types.js';
 
 const contractRegistry = new Map<string, Contract<unknown, unknown>>();
 

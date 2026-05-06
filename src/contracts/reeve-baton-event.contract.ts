@@ -13,8 +13,8 @@
 //   ~/Code/covenant/contracts/reeve.baton.event.shape.policy.yaml
 
 import { z } from 'zod';
-import { registerContract } from '../registry.ts';
-import type { Contract, ViolationBudget } from '../types.ts';
+import { registerContract } from '../registry.js';
+import type { Contract, ViolationBudget } from '../types.js';
 
 // Latest schema version this codebase emits + understands. Bump when
 // adding non-backward-compatible fields. Recovery code reads

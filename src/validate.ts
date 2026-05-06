@@ -14,16 +14,16 @@
 //   - The CALLER decides whether to throw on rejected (covenant doesn't
 //     throw — keeps the shape predictable for hot-path callers).
 
-import { ContractNotRegisteredError, ViolationStoreNotConfiguredError } from './errors.ts';
-import { lookupContract } from './registry.ts';
-import { getLogger, getViolationStore } from './store.ts';
+import { ContractNotRegisteredError, ViolationStoreNotConfiguredError } from './errors.js';
+import { lookupContract } from './registry.js';
+import { getLogger, getViolationStore } from './store.js';
 import type {
   Contract,
   Environment,
   ValidationResult,
   ViolationAction,
   ViolationContext,
-} from './types.ts';
+} from './types.js';
 
 let cachedEnv: Environment | undefined;
 function getEnv(): Environment {

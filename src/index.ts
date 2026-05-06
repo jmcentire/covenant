@@ -41,19 +41,19 @@ export type {
   ViolationBudget,
   ViolationContext,
   ViolationStore,
-} from './types.ts';
+} from './types.js';
 export {
   ContractAlreadyRegisteredError,
   ContractNotRegisteredError,
   CovenantError,
   ViolationStoreNotConfiguredError,
-} from './errors.ts';
+} from './errors.js';
 export {
   __test_clearContractRegistry,
   listContracts,
   lookupContract,
   registerContract,
-} from './registry.ts';
+} from './registry.js';
 export {
   __test_resetStore,
   getLogger,
@@ -61,5 +61,5 @@ export {
   InMemoryViolationStore,
   setLogger,
   setViolationStore,
-} from './store.ts';
-export { __test_setEnv, validate } from './validate.ts';
+} from './store.js';
+export { __test_setEnv, validate } from './validate.js';
