@@ -1,0 +1,67 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ts:
+    name: TypeScript
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ts
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: ts/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - name: covenant-export --check
+        run: npm run export:check
+      - run: npm run build
+
+  py:
+    name: Python
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .[test]
+      - name: pytest
+        run: pytest -v
+
+  drift:
+    name: TS export drift gate
+    runs-on: ubuntu-latest
+    needs: ts
+    defaults:
+      run:
+        working-directory: ts
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: ts/package-lock.json
+      - run: npm ci
+      - name: ensure round-trip is idempotent
+        run: |
+          npx tsx bin/covenant-export.ts
+          if ! git diff --quiet -- ../contracts; then
+            echo 'covenant-export produced a diff. Re-run locally and commit.'
+            git diff -- ../contracts
+            exit 1
+          fi

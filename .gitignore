@@ -1,0 +1,32 @@
+node_modules/
+dist/
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+.tox/
+.venv/
+venv/
+env/
+
+# Editors
+.vscode/
+.idea/
+
+# Misc
+.env
+.env.*
+!.env.example
+
+# Python build artifacts (not in py/ subdir to keep root clean)
+build/
+*.egg-info
+

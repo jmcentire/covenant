@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    // .ts imports rewrite to .js in emit. NodeNext requires this in
+    // ES module output; tsc handles it once `rewriteRelativeImportExtensions`
+    // is on (TS 5.7+). For older TS we keep allowImportingTsExtensions on.
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["tests", "bin", "**/*.test.ts"]
+}

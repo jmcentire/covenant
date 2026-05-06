@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "description": "Golden vectors that BOTH the TS and Python covenant runtimes must agree on. Each case names a contract (declared inline), an env, a direction, a value, and the expected ValidationResult shape. The action field after a violation is what changes per env; budgetExhausted requires multiple cases sharing a contract id.",
+  "contracts": [
+    {
+      "id": "vector.simple",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "count": { "type": "integer", "minimum": 0 }
+        },
+        "required": ["name", "count"],
+        "additionalProperties": false
+      },
+      "policy": {
+        "dev":     { "in": "strict-reject", "out": "log-only" },
+        "test":    { "in": "strict-reject", "out": "log-only" },
+        "staging": { "in": "log-and-emit",  "out": "log-only" },
+        "prod":    { "in": "log-only",      "out": "log-only" }
+      }
+    },
+    {
+      "id": "vector.budget",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": { "ok": { "const": true } },
+        "required": ["ok"],
+        "additionalProperties": false
+      },
+      "policy": {
+        "dev":     { "in": "strict-reject", "out": "log-only" },
+        "test":    { "in": "strict-reject", "out": "log-only" },
+        "staging": { "in": "strict-reject", "out": "log-only" },
+        "prod":    { "in": "strict-reject", "out": "log-only" }
+      },
+      "budget": {
+        "windowMs": 60000,
+        "maxViolations": 2,
+        "onExhaust": { "kind": "page-operator" }
+      }
+    }
+  ],
+  "cases": [
+    {
+      "name": "happy_path_dev",
+      "contractId": "vector.simple",
+      "env": "dev",
+      "direction": "in",
+      "value": { "name": "alice", "count": 7 },
+      "expect": { "ok": true }
+    },
+    {
+      "name": "happy_path_prod",
+      "contractId": "vector.simple",
+      "env": "prod",
+      "direction": "in",
+      "value": { "name": "alice", "count": 7 },
+      "expect": { "ok": true }
+    },
+    {
+      "name": "violation_dev_strict_reject",
+      "contractId": "vector.simple",
+      "env": "dev",
+      "direction": "in",
+      "value": { "name": "", "count": -1 },
+      "expect": {
+        "ok": false,
+        "action": "strict-reject",
+        "budgetExhausted": false
+      }
+    },
+    {
+      "name": "violation_test_strict_reject",
+      "contractId": "vector.simple",
+      "env": "test",
+      "direction": "in",
+      "value": { "name": "", "count": -1 },
+      "expect": {
+        "ok": false,
+        "action": "strict-reject",
+        "budgetExhausted": false
+      }
+    },
+    {
+      "name": "violation_staging_log_and_emit",
+      "contractId": "vector.simple",
+      "env": "staging",
+      "direction": "in",
+      "value": { "name": "", "count": -1 },
+      "expect": {
+        "ok": false,
+        "action": "log-and-emit",
+        "budgetExhausted": false
+      }
+    },
+    {
+      "name": "violation_prod_log_only",
+      "contractId": "vector.simple",
+      "env": "prod",
+      "direction": "in",
+      "value": { "name": "", "count": -1 },
+      "expect": {
+        "ok": false,
+        "action": "log-only",
+        "budgetExhausted": false
+      }
+    },
+    {
+      "name": "no_response_schema_passes",
+      "contractId": "vector.simple",
+      "env": "prod",
+      "direction": "out",
+      "value": "anything goes here",
+      "expect": { "ok": true }
+    },
+    {
+      "name": "budget_violation_1_no_exhaust",
+      "contractId": "vector.budget",
+      "env": "prod",
+      "direction": "in",
+      "value": { "ok": false },
+      "expect": {
+        "ok": false,
+        "action": "strict-reject",
+        "budgetExhausted": false
+      }
+    },
+    {
+      "name": "budget_violation_2_no_exhaust",
+      "contractId": "vector.budget",
+      "env": "prod",
+      "direction": "in",
+      "value": { "ok": false },
+      "expect": {
+        "ok": false,
+        "action": "strict-reject",
+        "budgetExhausted": false
+      }
+    },
+    {
+      "name": "budget_violation_3_exhausts",
+      "contractId": "vector.budget",
+      "env": "prod",
+      "direction": "in",
+      "value": { "ok": false },
+      "expect": {
+        "ok": false,
+        "action": "strict-reject",
+        "budgetExhausted": true
+      }
+    },
+    {
+      "name": "budget_isolated_test_env_no_exhaust",
+      "contractId": "vector.budget",
+      "env": "test",
+      "direction": "in",
+      "value": { "ok": false },
+      "expect": {
+        "ok": false,
+        "action": "strict-reject",
+        "budgetExhausted": false
+      }
+    }
+  ]
+}

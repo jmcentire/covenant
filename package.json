@@ -1,0 +1,27 @@
+{
+  "name": "@stack/covenant-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "covenant — contract validation runtime (Zod-canonical, twin TS+Python). Workspace root.",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "ts"
+  ],
+  "scripts": {
+    "test": "npm --workspace=ts run test",
+    "test:ts": "npm --workspace=ts run test",
+    "test:py": "(cd py && pytest)",
+    "test:all": "npm run test:ts && npm run test:py",
+    "lint": "npm --workspace=ts run lint",
+    "export": "npm --workspace=ts run export",
+    "export:check": "npm --workspace=ts run export:check"
+  },
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jmcentire/covenant.git"
+  }
+}

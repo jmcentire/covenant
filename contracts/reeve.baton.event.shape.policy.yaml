@@ -1,0 +1,19 @@
+id: reeve.baton.event.shape
+policy:
+  dev:
+    in: strict-reject
+    out: log-only
+  test:
+    in: strict-reject
+    out: log-only
+  staging:
+    in: strict-reject
+    out: log-only
+  prod:
+    in: strict-reject
+    out: log-only
+budget:
+  windowMs: 300000
+  maxViolations: 10
+  onExhaust:
+    kind: page-operator

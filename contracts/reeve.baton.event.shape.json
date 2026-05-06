@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_id": "reeve.baton.event.shape",
+  "request": {
+    "type": "object",
+    "properties": {
+      "event_id": {
+        "type": "string",
+        "format": "uuid",
+        "minLength": 1
+      },
+      "schema_version": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "event_type": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)+$"
+      },
+      "occurred_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "payload": {
+        "type": "object",
+        "additionalProperties": {}
+      }
+    },
+    "required": [
+      "event_id",
+      "schema_version",
+      "event_type",
+      "occurred_at",
+      "payload"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2019-09/schema#"
+  }
+}
