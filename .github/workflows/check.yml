@@ -20,13 +20,13 @@ jobs:
       - name: install
         run: npm ci
       - name: lint
-        run: npm --workspace=ts run lint
+        run: npm run lint
       - name: test
-        run: npm --workspace=ts run test
+        run: npm test
       - name: covenant-export --check
-        run: npm --workspace=ts run export:check
+        run: npm run export:check
       - name: build
-        run: npm --workspace=ts run build
+        run: npm run build
 
   py:
     name: Python
@@ -58,7 +58,7 @@ jobs:
         run: npm ci
       - name: ensure round-trip is idempotent
         run: |
-          npm --workspace=ts run export
+          npm run export
           if ! git diff --quiet -- contracts; then
             echo 'covenant-export produced a diff. Re-run locally and commit.'
             git diff -- contracts
