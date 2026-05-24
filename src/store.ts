@@ -1,7 +1,7 @@
 // Process-local registration of the violation store and logger
 // adapters. Consumers wire these once at boot:
 //
-//   import { setViolationStore, setLogger } from '@stack/covenant';
+//   import { setViolationStore, setLogger } from 'covenant';
 //   setViolationStore({ insert, countRecent });
 //   setLogger(myPinoChild);
 //

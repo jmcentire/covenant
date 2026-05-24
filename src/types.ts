@@ -1,5 +1,5 @@
 // covenant types. Slice 4 of Reeve's production-stability roadmap;
-// extracted to @stack/covenant 2026-05-06.
+// extracted to covenant 2026-05-06.
 //
 // Sim-vetted V1.
 

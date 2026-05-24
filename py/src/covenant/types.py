@@ -1,4 +1,4 @@
-"""Core types matching @stack/covenant's TS public API.
+"""Core types matching covenant's TS public API.
 
 The TS canonical types (in ts/src/types.ts) are the source of truth.
 These Python mirrors stay in lock-step; deviations are bugs.

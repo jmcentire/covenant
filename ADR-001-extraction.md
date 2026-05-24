@@ -83,7 +83,7 @@ those consumers wire up.
 │   │   └── cli.ts
 │   └── tests/
 ├── ts/                              # runtime validator (TS)
-│   ├── package.json                 # @stack/covenant
+│   ├── package.json                 # covenant
 │   ├── src/
 │   │   ├── types.ts
 │   │   ├── validate.ts              # Zod-backed validator
@@ -200,7 +200,7 @@ This is a one-time step, after which JSON Schema is canonical.
    produce the first batch of `*.contract.yaml`.
 7. Reeve PR: replace
    `import {...} from '../covenant/index.js'` with
-   `import {...} from '@stack/covenant/ts'`; verify tests stay green.
+   `import {...} from 'covenant'`; verify tests stay green.
 8. covenant_main DB extraction is a separate ADR (ADR-002).
 
 ## Open questions for next ADR

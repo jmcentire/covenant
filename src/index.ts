@@ -12,7 +12,7 @@
 //     setViolationStore,
 //     validate,
 //     InMemoryViolationStore,
-//   } from '@stack/covenant';
+//   } from 'covenant';
 //
 //   setViolationStore(new InMemoryViolationStore());
 //   registerContract({

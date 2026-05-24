@@ -1,7 +1,7 @@
 [project]
 name = "covenant"
 version = "0.1.0"
-description = "Contract validation runtime: per-env policy + sliding-window violation budget. Pydantic v2 sibling of @stack/covenant."
+description = "Contract validation runtime: per-env policy + sliding-window violation budget. Pydantic v2 sibling of covenant."
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.11"

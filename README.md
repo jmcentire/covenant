@@ -53,7 +53,7 @@ covenant/
   contracts/                       # canonical JSON Schema + policy YAML
     reeve.baton.event.shape.json   # emitted by covenant-export
     reeve.baton.event.shape.policy.yaml
-  package.json                     # @stack/covenant (TS package, root-level)
+  package.json                     # covenant (TS package, root-level)
   tsconfig.json
   tsconfig.build.json              # used by `prepare` to emit dist/
   src/
@@ -95,7 +95,7 @@ with `.d.ts` files.
 ```json
 {
   "dependencies": {
-    "@stack/covenant": "git+https://github.com/jmcentire/covenant.git#v0.1.1",
+    "covenant": "git+https://github.com/jmcentire/covenant.git#v0.1.1",
     "zod": "^3.23.0"
   }
 }
@@ -110,7 +110,7 @@ import {
   setViolationStore,
   validate,
   InMemoryViolationStore,
-} from '@stack/covenant';
+} from 'covenant';
 
 setViolationStore(new InMemoryViolationStore());
 

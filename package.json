@@ -1,5 +1,5 @@
 {
-  "name": "@stack/covenant",
+  "name": "covenant",
   "version": "0.1.1",
   "description": "Contract validation runtime: per-env policy + sliding-window violation budget. Zod-canonical.",
   "license": "MIT",
