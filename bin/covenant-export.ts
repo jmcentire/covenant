@@ -37,7 +37,7 @@ type Args = {
 
 function parseArgs(argv: readonly string[]): Args {
   const here = dirname(fileURLToPath(import.meta.url));
-  const repoRoot = resolve(here, '..', '..');
+  const repoRoot = resolve(here, '..');
   let check = false;
   let contractsDir = resolve(here, '..', 'src', 'contracts');
   let outDir = resolve(repoRoot, 'contracts');
