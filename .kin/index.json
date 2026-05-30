@@ -1,0 +1,376 @@
+{
+  "domains": [
+    "code",
+    "python",
+    "typescript"
+  ],
+  "node_count": 33,
+  "nodes": [
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-mod-covenant-04b485505a31",
+      "title": "src/validate.ts",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-mod-covenant-1196979c7530",
+      "title": "src/contracts/reeve-baton-event.contract.ts",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-mod-covenant-22aada75d9d0",
+      "title": "bin/covenant-export.ts",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-mod-covenant-2717c7fb31c2",
+      "title": "src/store.ts",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-covenant-39bb2b417c80",
+      "title": "py/src/covenant/__init__.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-covenant-3a1a5feb91b4",
+      "title": "py/src/covenant/store.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-mod-covenant-55db69e02ff5",
+      "title": "src/errors.ts",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-covenant-77b6e07a09b9",
+      "title": "py/tests/test_golden_vectors.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-covenant-79c5d4aea545",
+      "title": "py/src/covenant/runtime.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-covenant-7fcfda20984f",
+      "title": "py/src/covenant/loader.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-covenant-9efa164fb047",
+      "title": "py/src/covenant/errors.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-covenant-a3b58ea3498a",
+      "title": "py/tests/test_covenant.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-mod-covenant-c54113cf61ec",
+      "title": "src/types.ts",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-covenant-e6148482e402",
+      "title": "py/src/covenant/types.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-mod-covenant-f49d711ed1e5",
+      "title": "src/registry.ts",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-17c497aa3a6a",
+      "title": "ViolationStoreNotConfiguredError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-sym-covenant-1f4afc885017",
+      "title": "CovenantError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-29889290be49",
+      "title": "ContractNotRegisteredError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-sym-covenant-2ab6fe8e657c",
+      "title": "ContractNotRegisteredError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-41334c0d2e47",
+      "title": "ViolationBudget",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-4f098f26707a",
+      "title": "Covenant",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-7c4562c9b162",
+      "title": "ViolationStore",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-8f3f82578edc",
+      "title": "Contract",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-90f704abbb46",
+      "title": "CovenantError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-96aeb7d28767",
+      "title": "Violation",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-sym-covenant-aad6782c9848",
+      "title": "InMemoryViolationStore",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-sym-covenant-ad8993c04624",
+      "title": "ContractAlreadyRegisteredError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-b08ce311c2c9",
+      "title": "InMemoryViolationStore",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-bda850d14292",
+      "title": "ValidationResult",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-cc22fe63af73",
+      "title": "AsyncpgViolationStore",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-dca4f101c154",
+      "title": "ViolationContext",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "typescript"
+      ],
+      "id": "code-sym-covenant-e8a921a12dfc",
+      "title": "ViolationStoreNotConfiguredError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-covenant-f02e51a31c67",
+      "title": "ContractAlreadyRegisteredError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:47:43",
+      "weight": 0.5
+    }
+  ],
+  "repo": "covenant",
+  "source_updated_at": "2026-05-30T14:47:43",
+  "version": 1
+}
