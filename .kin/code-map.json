@@ -1,957 +1,382 @@
 {
-  "version": "1.0.0",
-  "project": {
-    "name": "covenant",
-    "description": "Code map exported from Kindex for covenant.",
-    "languages": [
-      "Python",
-      "TypeScript"
-    ],
-    "frameworks": [],
-    "analyzedAt": "2026-05-24T14:54:16",
-    "gitCommitHash": "5fd706fd8a05e088793d137c97af00cd3ebfa270"
-  },
-  "nodes": [
-    {
-      "id": "code-mod-covenant-3a1a5feb91b4",
-      "type": "file",
-      "name": "py/src/covenant/store.py",
-      "filePath": "py/src/covenant/store.py",
-      "summary": "Language: Python | Path: py/src/covenant/store.py | ~177 lines ## Classes - AsyncpgViolationStore",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 4,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "artifact",
-        "toolTier": "C"
-      }
-    },
-    {
-      "id": "code-mod-covenant-a3b58ea3498a",
-      "type": "file",
-      "name": "py/tests/test_covenant.py",
-      "filePath": "py/tests/test_covenant.py",
-      "summary": "Language: Python | Path: py/tests/test_covenant.py | ~272 lines ## Functions - cov() -> Covenant",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 12,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "artifact",
-        "toolTier": "C"
-      }
-    },
-    {
-      "id": "code-mod-covenant-e6148482e402",
-      "type": "file",
-      "name": "py/src/covenant/types.py",
-      "filePath": "py/src/covenant/types.py",
-      "summary": "Language: Python | Path: py/src/covenant/types.py | ~86 lines ## Classes - Contract",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 9,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "artifact",
-        "toolTier": "C"
-      }
-    },
-    {
-      "id": "code-mod-covenant-9efa164fb047",
-      "type": "file",
-      "name": "py/src/covenant/errors.py",
-      "filePath": "py/src/covenant/errors.py",
-      "summary": "Language: Python | Path: py/src/covenant/errors.py | ~27 lines ## Classes - ContractAlreadyRegisteredError(CovenantError)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 4,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "artifact",
-        "toolTier": "C"
-      }
-    },
-    {
-      "id": "code-mod-covenant-79c5d4aea545",
-      "type": "file",
-      "name": "py/src/covenant/runtime.py",
-      "filePath": "py/src/covenant/runtime.py",
-      "summary": "Language: Python | Path: py/src/covenant/runtime.py | ~230 lines ## Classes - Covenant",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 5,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "artifact",
-        "toolTier": "C"
-      }
-    },
-    {
-      "id": "code-mod-covenant-77b6e07a09b9",
-      "type": "file",
-      "name": "py/tests/test_golden_vectors.py",
-      "filePath": "py/tests/test_golden_vectors.py",
-      "summary": "Language: Python | Path: py/tests/test_golden_vectors.py | ~62 lines ## Functions - test_golden_vectors_pass() -> None",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 3,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "artifact",
-        "toolTier": "C"
-      }
-    },
-    {
-      "id": "code-mod-covenant-7fcfda20984f",
-      "type": "file",
-      "name": "py/src/covenant/loader.py",
-      "filePath": "py/src/covenant/loader.py",
-      "summary": "Language: Python | Path: py/src/covenant/loader.py | ~193 lines ## Functions - load_contract_from_files(schema_path: Path, policy_path: Path) -> Contract",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 9,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "artifact",
-        "toolTier": "C"
-      }
-    },
-    {
-      "id": "code-mod-covenant-39bb2b417c80",
-      "type": "file",
-      "name": "py/src/covenant/__init__.py",
-      "filePath": "py/src/covenant/__init__.py",
-      "summary": "Language: Python | Path: py/src/covenant/__init__.py | ~46 lines",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "artifact",
-        "toolTier": "C"
-      }
-    },
-    {
-      "id": "code-mod-covenant-04b485505a31",
-      "type": "file",
-      "name": "src/validate.ts",
-      "filePath": "src/validate.ts",
-      "summary": "Language: TypeScript | Path: src/validate.ts | ~154 lines ## Functions - __test_setEnv()",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 4,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "artifact",
-        "toolTier": "A"
-      }
-    },
-    {
-      "id": "code-sym-covenant-aad6782c9848",
-      "type": "class",
-      "name": "InMemoryViolationStore",
-      "filePath": "src/store.ts",
-      "summary": "class InMemoryViolationStore(ViolationStore) (src/store.ts:48)",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-mod-covenant-f49d711ed1e5",
-      "type": "file",
-      "name": "src/registry.ts",
-      "filePath": "src/registry.ts",
-      "summary": "Language: TypeScript | Path: src/registry.ts | ~23 lines ## Functions - __test_clearContractRegistry()",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 4,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "artifact",
-        "toolTier": "A"
-      }
-    },
-    {
-      "id": "code-sym-covenant-e8a921a12dfc",
-      "type": "class",
-      "name": "ViolationStoreNotConfiguredError",
-      "filePath": "src/errors.ts",
-      "summary": "class ViolationStoreNotConfiguredError(CovenantError) (src/errors.ts:34)",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-4f098f26707a",
-      "type": "class",
-      "name": "Covenant",
-      "filePath": "py/src/covenant/runtime.py",
-      "summary": "class Covenant (py/src/covenant/runtime.py:51) ## Methods - __test_clear(self) -> None",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 9,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-mod-covenant-2717c7fb31c2",
-      "type": "file",
-      "name": "src/store.ts",
-      "filePath": "src/store.ts",
-      "summary": "Language: TypeScript | Path: src/store.ts | ~108 lines ## Classes - InMemoryViolationStore(ViolationStore)",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 6,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "artifact",
-        "toolTier": "A"
-      }
-    },
-    {
-      "id": "code-mod-covenant-55db69e02ff5",
-      "type": "file",
-      "name": "src/errors.ts",
-      "filePath": "src/errors.ts",
-      "summary": "Language: TypeScript | Path: src/errors.ts | ~36 lines ## Classes - ContractAlreadyRegisteredError(CovenantError)",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 4,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "artifact",
-        "toolTier": "A"
-      }
-    },
-    {
-      "id": "code-sym-covenant-ad8993c04624",
-      "type": "class",
-      "name": "ContractAlreadyRegisteredError",
-      "filePath": "src/errors.ts",
-      "summary": "class ContractAlreadyRegisteredError(CovenantError) (src/errors.ts:14)",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-2ab6fe8e657c",
-      "type": "class",
-      "name": "ContractNotRegisteredError",
-      "filePath": "src/errors.ts",
-      "summary": "class ContractNotRegisteredError(CovenantError) (src/errors.ts:25)",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-1f4afc885017",
-      "type": "class",
-      "name": "CovenantError",
-      "filePath": "src/errors.ts",
-      "summary": "class CovenantError(Error) (src/errors.ts:7)",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-f02e51a31c67",
-      "type": "class",
-      "name": "ContractAlreadyRegisteredError",
-      "filePath": "py/src/covenant/errors.py",
-      "summary": "class ContractAlreadyRegisteredError(CovenantError) (py/src/covenant/errors.py:8)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-29889290be49",
-      "type": "class",
-      "name": "ContractNotRegisteredError",
-      "filePath": "py/src/covenant/errors.py",
-      "summary": "class ContractNotRegisteredError(CovenantError) (py/src/covenant/errors.py:17)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-90f704abbb46",
-      "type": "class",
-      "name": "CovenantError",
-      "filePath": "py/src/covenant/errors.py",
-      "summary": "class CovenantError(Exception) (py/src/covenant/errors.py:4)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-17c497aa3a6a",
-      "type": "class",
-      "name": "ViolationStoreNotConfiguredError",
-      "filePath": "py/src/covenant/errors.py",
-      "summary": "class ViolationStoreNotConfiguredError(CovenantError) (py/src/covenant/errors.py:26)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-96aeb7d28767",
-      "type": "class",
-      "name": "Violation",
-      "filePath": "py/src/covenant/types.py",
-      "summary": "class Violation (py/src/covenant/types.py:70)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-41334c0d2e47",
-      "type": "class",
-      "name": "ViolationBudget",
-      "filePath": "py/src/covenant/types.py",
-      "summary": "class ViolationBudget (py/src/covenant/types.py:37)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-dca4f101c154",
-      "type": "class",
-      "name": "ViolationContext",
-      "filePath": "py/src/covenant/types.py",
-      "summary": "class ViolationContext (py/src/covenant/types.py:64)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-mod-covenant-c54113cf61ec",
-      "type": "file",
-      "name": "src/types.ts",
-      "filePath": "src/types.ts",
-      "summary": "Language: TypeScript | Path: src/types.ts | ~98 lines",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "artifact",
-        "toolTier": "A"
-      }
-    },
-    {
-      "id": "code-mod-covenant-1196979c7530",
-      "type": "file",
-      "name": "src/contracts/reeve-baton-event.contract.ts",
-      "filePath": "src/contracts/reeve-baton-event.contract.ts",
-      "summary": "Language: TypeScript | Path: src/contracts/reeve-baton-event.contract.ts | ~81 lines ## Functions - __test_resetBatonEventContractRegistration()",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 2,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "artifact",
-        "toolTier": "A"
-      }
-    },
-    {
-      "id": "code-sym-covenant-8f3f82578edc",
-      "type": "class",
-      "name": "Contract",
-      "filePath": "py/src/covenant/types.py",
-      "summary": "class Contract (py/src/covenant/types.py:50)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-bda850d14292",
-      "type": "class",
-      "name": "ValidationResult",
-      "filePath": "py/src/covenant/types.py",
-      "summary": "class ValidationResult (py/src/covenant/types.py:80)",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 1,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-cc22fe63af73",
-      "type": "class",
-      "name": "AsyncpgViolationStore",
-      "filePath": "py/src/covenant/store.py",
-      "summary": "class AsyncpgViolationStore (py/src/covenant/store.py:123) ## Methods - count_recent( self, *, contract_id: str, environment: Environment, window_ms: int, ) -> int",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 2,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-b08ce311c2c9",
-      "type": "class",
-      "name": "InMemoryViolationStore",
-      "filePath": "py/src/covenant/store.py",
-      "summary": "class InMemoryViolationStore (py/src/covenant/store.py:67) ## Methods - __test_clear(self) -> None",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 4,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-sym-covenant-7c4562c9b162",
-      "type": "class",
-      "name": "ViolationStore",
-      "filePath": "py/src/covenant/store.py",
-      "summary": "class ViolationStore(Protocol) (py/src/covenant/store.py:28) ## Methods - count_recent( self, *, contract_id: str, environment: Environment, window_ms: int, ) -> int",
-      "tags": [
-        "code",
-        "python"
-      ],
-      "complexity": 2,
-      "languageNotes": {
-        "language": "Python",
-        "kindexType": "concept",
-        "toolTier": ""
-      }
-    },
-    {
-      "id": "code-mod-covenant-22aada75d9d0",
-      "type": "file",
-      "name": "bin/covenant-export.ts",
-      "filePath": "bin/covenant-export.ts",
-      "summary": "Language: TypeScript | Path: bin/covenant-export.ts | ~235 lines ## Functions - discoverContractFiles()",
-      "tags": [
-        "code",
-        "typescript"
-      ],
-      "complexity": 8,
-      "languageNotes": {
-        "language": "TypeScript",
-        "kindexType": "artifact",
-        "toolTier": "A"
-      }
-    }
-  ],
   "edges": [
     {
-      "source": "code-mod-covenant-3a1a5feb91b4",
-      "target": "code-mod-covenant-79c5d4aea545",
-      "type": "depends_on",
       "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-3a1a5feb91b4",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-a3b58ea3498a",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-e6148482e402",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-9efa164fb047",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-79c5d4aea545",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-77b6e07a09b9",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-7fcfda20984f",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-39bb2b417c80",
-      "target": "code-mod-covenant-04b485505a31",
-      "type": "depends_on",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-39bb2b417c80",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
       "source": "code-mod-covenant-04b485505a31",
       "target": "code-sym-covenant-4f098f26707a",
       "type": "contains",
-      "direction": "outbound",
       "weight": 0.5
     },
     {
-      "source": "code-sym-covenant-aad6782c9848",
-      "target": "code-mod-covenant-2717c7fb31c2",
-      "type": "contains",
       "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-aad6782c9848",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-f49d711ed1e5",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-e8a921a12dfc",
-      "target": "code-mod-covenant-55db69e02ff5",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-e8a921a12dfc",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-4f098f26707a",
-      "target": "code-mod-covenant-79c5d4aea545",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-4f098f26707a",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-2717c7fb31c2",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-55db69e02ff5",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-ad8993c04624",
-      "target": "code-mod-covenant-55db69e02ff5",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-ad8993c04624",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-2ab6fe8e657c",
-      "target": "code-mod-covenant-55db69e02ff5",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-2ab6fe8e657c",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-1f4afc885017",
-      "target": "code-mod-covenant-55db69e02ff5",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-1f4afc885017",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-f02e51a31c67",
-      "target": "code-mod-covenant-9efa164fb047",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-f02e51a31c67",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-29889290be49",
-      "target": "code-mod-covenant-9efa164fb047",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-29889290be49",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-90f704abbb46",
-      "target": "code-mod-covenant-9efa164fb047",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-90f704abbb46",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-17c497aa3a6a",
-      "target": "code-mod-covenant-9efa164fb047",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-17c497aa3a6a",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-96aeb7d28767",
-      "target": "code-mod-covenant-e6148482e402",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-96aeb7d28767",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-41334c0d2e47",
-      "target": "code-mod-covenant-e6148482e402",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-41334c0d2e47",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-dca4f101c154",
-      "target": "code-mod-covenant-e6148482e402",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-dca4f101c154",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-mod-covenant-c54113cf61ec",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
       "source": "code-mod-covenant-1196979c7530",
       "target": "code-sym-covenant-4f098f26707a",
       "type": "contains",
-      "direction": "outbound",
       "weight": 0.5
     },
     {
-      "source": "code-sym-covenant-8f3f82578edc",
-      "target": "code-mod-covenant-e6148482e402",
-      "type": "contains",
       "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-8f3f82578edc",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-bda850d14292",
-      "target": "code-mod-covenant-e6148482e402",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-bda850d14292",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-cc22fe63af73",
-      "target": "code-mod-covenant-3a1a5feb91b4",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-cc22fe63af73",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-b08ce311c2c9",
-      "target": "code-mod-covenant-3a1a5feb91b4",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-b08ce311c2c9",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
-      "source": "code-sym-covenant-7c4562c9b162",
-      "target": "code-mod-covenant-3a1a5feb91b4",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.6
-    },
-    {
-      "source": "code-sym-covenant-7c4562c9b162",
-      "target": "code-sym-covenant-4f098f26707a",
-      "type": "contains",
-      "direction": "outbound",
-      "weight": 0.5
-    },
-    {
       "source": "code-mod-covenant-22aada75d9d0",
       "target": "code-sym-covenant-4f098f26707a",
       "type": "contains",
+      "weight": 0.5
+    },
+    {
       "direction": "outbound",
+      "source": "code-mod-covenant-2717c7fb31c2",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-39bb2b417c80",
+      "target": "code-mod-covenant-04b485505a31",
+      "type": "depends_on",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-39bb2b417c80",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-3a1a5feb91b4",
+      "target": "code-mod-covenant-79c5d4aea545",
+      "type": "depends_on",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-3a1a5feb91b4",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-55db69e02ff5",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-77b6e07a09b9",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-79c5d4aea545",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-7fcfda20984f",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-9efa164fb047",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-a3b58ea3498a",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-c54113cf61ec",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-e6148482e402",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-mod-covenant-f49d711ed1e5",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-17c497aa3a6a",
+      "target": "code-mod-covenant-9efa164fb047",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-17c497aa3a6a",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-1f4afc885017",
+      "target": "code-mod-covenant-55db69e02ff5",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-1f4afc885017",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-29889290be49",
+      "target": "code-mod-covenant-9efa164fb047",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-29889290be49",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-2ab6fe8e657c",
+      "target": "code-mod-covenant-55db69e02ff5",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-2ab6fe8e657c",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-41334c0d2e47",
+      "target": "code-mod-covenant-e6148482e402",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-41334c0d2e47",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-4f098f26707a",
+      "target": "code-mod-covenant-79c5d4aea545",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-4f098f26707a",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-7c4562c9b162",
+      "target": "code-mod-covenant-3a1a5feb91b4",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-7c4562c9b162",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-8f3f82578edc",
+      "target": "code-mod-covenant-e6148482e402",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-8f3f82578edc",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-90f704abbb46",
+      "target": "code-mod-covenant-9efa164fb047",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-90f704abbb46",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-96aeb7d28767",
+      "target": "code-mod-covenant-e6148482e402",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-96aeb7d28767",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-aad6782c9848",
+      "target": "code-mod-covenant-2717c7fb31c2",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-aad6782c9848",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-ad8993c04624",
+      "target": "code-mod-covenant-55db69e02ff5",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-ad8993c04624",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-b08ce311c2c9",
+      "target": "code-mod-covenant-3a1a5feb91b4",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-b08ce311c2c9",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-bda850d14292",
+      "target": "code-mod-covenant-e6148482e402",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-bda850d14292",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-cc22fe63af73",
+      "target": "code-mod-covenant-3a1a5feb91b4",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-cc22fe63af73",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-dca4f101c154",
+      "target": "code-mod-covenant-e6148482e402",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-dca4f101c154",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-e8a921a12dfc",
+      "target": "code-mod-covenant-55db69e02ff5",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-e8a921a12dfc",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
+      "weight": 0.5
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-f02e51a31c67",
+      "target": "code-mod-covenant-9efa164fb047",
+      "type": "contains",
+      "weight": 0.6
+    },
+    {
+      "direction": "outbound",
+      "source": "code-sym-covenant-f02e51a31c67",
+      "target": "code-sym-covenant-4f098f26707a",
+      "type": "contains",
       "weight": 0.5
     }
   ],
   "layers": [
     {
+      "description": "Kindex-inferred core layer.",
       "id": "core",
       "name": "Core",
-      "description": "Kindex-inferred core layer.",
       "nodeIds": [
         "code-mod-covenant-04b485505a31",
         "code-mod-covenant-1196979c7530",
@@ -967,18 +392,18 @@
       ]
     },
     {
+      "description": "Kindex-inferred data layer.",
       "id": "data",
       "name": "Data",
-      "description": "Kindex-inferred data layer.",
       "nodeIds": [
         "code-mod-covenant-2717c7fb31c2",
         "code-mod-covenant-3a1a5feb91b4"
       ]
     },
     {
+      "description": "Kindex-inferred domain layer.",
       "id": "domain",
       "name": "Domain",
-      "description": "Kindex-inferred domain layer.",
       "nodeIds": [
         "code-sym-covenant-17c497aa3a6a",
         "code-sym-covenant-1f4afc885017",
@@ -1001,19 +426,591 @@
       ]
     },
     {
+      "description": "Kindex-inferred test layer.",
       "id": "test",
       "name": "Test",
-      "description": "Kindex-inferred test layer.",
       "nodeIds": [
         "code-mod-covenant-77b6e07a09b9",
         "code-mod-covenant-a3b58ea3498a"
       ]
     }
   ],
+  "nodes": [
+    {
+      "complexity": 8,
+      "filePath": "bin/covenant-export.ts",
+      "id": "code-mod-covenant-22aada75d9d0",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "TypeScript",
+        "toolTier": "A"
+      },
+      "name": "bin/covenant-export.ts",
+      "summary": "Language: TypeScript | Path: bin/covenant-export.ts | ~235 lines ## Functions - discoverContractFiles()",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/__init__.py",
+      "id": "code-mod-covenant-39bb2b417c80",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "Python",
+        "toolTier": "C"
+      },
+      "name": "py/src/covenant/__init__.py",
+      "summary": "Language: Python | Path: py/src/covenant/__init__.py | ~46 lines",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/errors.py",
+      "id": "code-sym-covenant-17c497aa3a6a",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "ViolationStoreNotConfiguredError",
+      "summary": "class ViolationStoreNotConfiguredError(CovenantError) (py/src/covenant/errors.py:26)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/errors.py",
+      "id": "code-sym-covenant-29889290be49",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "ContractNotRegisteredError",
+      "summary": "class ContractNotRegisteredError(CovenantError) (py/src/covenant/errors.py:17)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/errors.py",
+      "id": "code-sym-covenant-90f704abbb46",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "CovenantError",
+      "summary": "class CovenantError(Exception) (py/src/covenant/errors.py:4)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/errors.py",
+      "id": "code-sym-covenant-f02e51a31c67",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "ContractAlreadyRegisteredError",
+      "summary": "class ContractAlreadyRegisteredError(CovenantError) (py/src/covenant/errors.py:8)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 4,
+      "filePath": "py/src/covenant/errors.py",
+      "id": "code-mod-covenant-9efa164fb047",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "Python",
+        "toolTier": "C"
+      },
+      "name": "py/src/covenant/errors.py",
+      "summary": "Language: Python | Path: py/src/covenant/errors.py | ~27 lines ## Classes - ContractAlreadyRegisteredError(CovenantError)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 9,
+      "filePath": "py/src/covenant/loader.py",
+      "id": "code-mod-covenant-7fcfda20984f",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "Python",
+        "toolTier": "C"
+      },
+      "name": "py/src/covenant/loader.py",
+      "summary": "Language: Python | Path: py/src/covenant/loader.py | ~193 lines ## Functions - load_contract_from_files(schema_path: Path, policy_path: Path) -> Contract",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 9,
+      "filePath": "py/src/covenant/runtime.py",
+      "id": "code-sym-covenant-4f098f26707a",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "Covenant",
+      "summary": "class Covenant (py/src/covenant/runtime.py:51) ## Methods - __test_clear(self) -> None",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 5,
+      "filePath": "py/src/covenant/runtime.py",
+      "id": "code-mod-covenant-79c5d4aea545",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "Python",
+        "toolTier": "C"
+      },
+      "name": "py/src/covenant/runtime.py",
+      "summary": "Language: Python | Path: py/src/covenant/runtime.py | ~230 lines ## Classes - Covenant",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 2,
+      "filePath": "py/src/covenant/store.py",
+      "id": "code-sym-covenant-7c4562c9b162",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "ViolationStore",
+      "summary": "class ViolationStore(Protocol) (py/src/covenant/store.py:28) ## Methods - count_recent( self, *, contract_id: str, environment: Environment, window_ms: int, ) -> int",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 4,
+      "filePath": "py/src/covenant/store.py",
+      "id": "code-sym-covenant-b08ce311c2c9",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "InMemoryViolationStore",
+      "summary": "class InMemoryViolationStore (py/src/covenant/store.py:67) ## Methods - __test_clear(self) -> None",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 2,
+      "filePath": "py/src/covenant/store.py",
+      "id": "code-sym-covenant-cc22fe63af73",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "AsyncpgViolationStore",
+      "summary": "class AsyncpgViolationStore (py/src/covenant/store.py:123) ## Methods - count_recent( self, *, contract_id: str, environment: Environment, window_ms: int, ) -> int",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 4,
+      "filePath": "py/src/covenant/store.py",
+      "id": "code-mod-covenant-3a1a5feb91b4",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "Python",
+        "toolTier": "C"
+      },
+      "name": "py/src/covenant/store.py",
+      "summary": "Language: Python | Path: py/src/covenant/store.py | ~177 lines ## Classes - AsyncpgViolationStore",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/types.py",
+      "id": "code-sym-covenant-41334c0d2e47",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "ViolationBudget",
+      "summary": "class ViolationBudget (py/src/covenant/types.py:37)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/types.py",
+      "id": "code-sym-covenant-8f3f82578edc",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "Contract",
+      "summary": "class Contract (py/src/covenant/types.py:50)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/types.py",
+      "id": "code-sym-covenant-96aeb7d28767",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "Violation",
+      "summary": "class Violation (py/src/covenant/types.py:70)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/types.py",
+      "id": "code-sym-covenant-bda850d14292",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "ValidationResult",
+      "summary": "class ValidationResult (py/src/covenant/types.py:80)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "py/src/covenant/types.py",
+      "id": "code-sym-covenant-dca4f101c154",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "Python",
+        "toolTier": ""
+      },
+      "name": "ViolationContext",
+      "summary": "class ViolationContext (py/src/covenant/types.py:64)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 9,
+      "filePath": "py/src/covenant/types.py",
+      "id": "code-mod-covenant-e6148482e402",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "Python",
+        "toolTier": "C"
+      },
+      "name": "py/src/covenant/types.py",
+      "summary": "Language: Python | Path: py/src/covenant/types.py | ~86 lines ## Classes - Contract",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 12,
+      "filePath": "py/tests/test_covenant.py",
+      "id": "code-mod-covenant-a3b58ea3498a",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "Python",
+        "toolTier": "C"
+      },
+      "name": "py/tests/test_covenant.py",
+      "summary": "Language: Python | Path: py/tests/test_covenant.py | ~272 lines ## Functions - cov() -> Covenant",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 3,
+      "filePath": "py/tests/test_golden_vectors.py",
+      "id": "code-mod-covenant-77b6e07a09b9",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "Python",
+        "toolTier": "C"
+      },
+      "name": "py/tests/test_golden_vectors.py",
+      "summary": "Language: Python | Path: py/tests/test_golden_vectors.py | ~62 lines ## Functions - test_golden_vectors_pass() -> None",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 2,
+      "filePath": "src/contracts/reeve-baton-event.contract.ts",
+      "id": "code-mod-covenant-1196979c7530",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "TypeScript",
+        "toolTier": "A"
+      },
+      "name": "src/contracts/reeve-baton-event.contract.ts",
+      "summary": "Language: TypeScript | Path: src/contracts/reeve-baton-event.contract.ts | ~81 lines ## Functions - __test_resetBatonEventContractRegistration()",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 1,
+      "filePath": "src/errors.ts",
+      "id": "code-sym-covenant-1f4afc885017",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "TypeScript",
+        "toolTier": ""
+      },
+      "name": "CovenantError",
+      "summary": "class CovenantError(Error) (src/errors.ts:7)",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "src/errors.ts",
+      "id": "code-sym-covenant-2ab6fe8e657c",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "TypeScript",
+        "toolTier": ""
+      },
+      "name": "ContractNotRegisteredError",
+      "summary": "class ContractNotRegisteredError(CovenantError) (src/errors.ts:25)",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "src/errors.ts",
+      "id": "code-sym-covenant-ad8993c04624",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "TypeScript",
+        "toolTier": ""
+      },
+      "name": "ContractAlreadyRegisteredError",
+      "summary": "class ContractAlreadyRegisteredError(CovenantError) (src/errors.ts:14)",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 1,
+      "filePath": "src/errors.ts",
+      "id": "code-sym-covenant-e8a921a12dfc",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "TypeScript",
+        "toolTier": ""
+      },
+      "name": "ViolationStoreNotConfiguredError",
+      "summary": "class ViolationStoreNotConfiguredError(CovenantError) (src/errors.ts:34)",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 4,
+      "filePath": "src/errors.ts",
+      "id": "code-mod-covenant-55db69e02ff5",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "TypeScript",
+        "toolTier": "A"
+      },
+      "name": "src/errors.ts",
+      "summary": "Language: TypeScript | Path: src/errors.ts | ~36 lines ## Classes - ContractAlreadyRegisteredError(CovenantError)",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 4,
+      "filePath": "src/registry.ts",
+      "id": "code-mod-covenant-f49d711ed1e5",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "TypeScript",
+        "toolTier": "A"
+      },
+      "name": "src/registry.ts",
+      "summary": "Language: TypeScript | Path: src/registry.ts | ~23 lines ## Functions - __test_clearContractRegistry()",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 1,
+      "filePath": "src/store.ts",
+      "id": "code-sym-covenant-aad6782c9848",
+      "languageNotes": {
+        "kindexType": "concept",
+        "language": "TypeScript",
+        "toolTier": ""
+      },
+      "name": "InMemoryViolationStore",
+      "summary": "class InMemoryViolationStore(ViolationStore) (src/store.ts:48)",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "class"
+    },
+    {
+      "complexity": 6,
+      "filePath": "src/store.ts",
+      "id": "code-mod-covenant-2717c7fb31c2",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "TypeScript",
+        "toolTier": "A"
+      },
+      "name": "src/store.ts",
+      "summary": "Language: TypeScript | Path: src/store.ts | ~108 lines ## Classes - InMemoryViolationStore(ViolationStore)",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 1,
+      "filePath": "src/types.ts",
+      "id": "code-mod-covenant-c54113cf61ec",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "TypeScript",
+        "toolTier": "A"
+      },
+      "name": "src/types.ts",
+      "summary": "Language: TypeScript | Path: src/types.ts | ~98 lines",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "file"
+    },
+    {
+      "complexity": 4,
+      "filePath": "src/validate.ts",
+      "id": "code-mod-covenant-04b485505a31",
+      "languageNotes": {
+        "kindexType": "artifact",
+        "language": "TypeScript",
+        "toolTier": "A"
+      },
+      "name": "src/validate.ts",
+      "summary": "Language: TypeScript | Path: src/validate.ts | ~154 lines ## Functions - __test_setEnv()",
+      "tags": [
+        "code",
+        "typescript"
+      ],
+      "type": "file"
+    }
+  ],
+  "project": {
+    "analyzedAt": "2026-05-24T18:50:05-05:00",
+    "description": "Code map exported from Kindex for covenant.",
+    "frameworks": [],
+    "gitCommitHash": "11d1030818843a591abae92c876d6bc14ca6fd2c",
+    "languages": [
+      "Python",
+      "TypeScript"
+    ],
+    "name": "covenant"
+  },
   "tour": [
     {
-      "order": 1,
-      "title": "Core",
       "description": "Review 11 node(s) in the Core layer.",
       "nodeIds": [
         "code-mod-covenant-04b485505a31",
@@ -1027,20 +1024,20 @@
         "code-mod-covenant-c54113cf61ec",
         "code-mod-covenant-e6148482e402",
         "code-mod-covenant-f49d711ed1e5"
-      ]
+      ],
+      "order": 1,
+      "title": "Core"
     },
     {
-      "order": 2,
-      "title": "Data",
       "description": "Review 2 node(s) in the Data layer.",
       "nodeIds": [
         "code-mod-covenant-2717c7fb31c2",
         "code-mod-covenant-3a1a5feb91b4"
-      ]
+      ],
+      "order": 2,
+      "title": "Data"
     },
     {
-      "order": 3,
-      "title": "Domain",
       "description": "Review 18 node(s) in the Domain layer.",
       "nodeIds": [
         "code-sym-covenant-17c497aa3a6a",
@@ -1061,16 +1058,19 @@
         "code-sym-covenant-dca4f101c154",
         "code-sym-covenant-e8a921a12dfc",
         "code-sym-covenant-f02e51a31c67"
-      ]
+      ],
+      "order": 3,
+      "title": "Domain"
     },
     {
-      "order": 4,
-      "title": "Test",
       "description": "Review 2 node(s) in the Test layer.",
       "nodeIds": [
         "code-mod-covenant-77b6e07a09b9",
         "code-mod-covenant-a3b58ea3498a"
-      ]
+      ],
+      "order": 4,
+      "title": "Test"
     }
-  ]
+  ],
+  "version": "1.0.0"
 }
